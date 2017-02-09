@@ -1,0 +1,12 @@
+
+[ClassVersion("1.0.0.0"), FriendlyName("MSFT_xRDPersonalSessionDesktop")]
+class MSFT_xRDPersonalSessionDesktop : OMI_BaseResource
+{
+    [key, Description("Specifies a name for the session collection. ")] string CollectionName;
+    [key, Description("Specifies an RD Session Host server to include in the session collection. ")] string SessionHost;
+    [write, Description("Specifies a description for the collection.")] string CollectionDescription;
+    [write, Description("Specifies the Remote Desktop Connection Broker (RD Connection Broker) server for a Remote Desktop deployment.")] string ConnectionBroker;
+    [write, Description("Specifies whether to grant local administrative privledge")] bool GrantAdministrativePrivilege;
+    [write, Description("Specifies whether to auto assign user to an available session host")] bool AutoAssignUser;
+};
+
